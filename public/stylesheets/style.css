@@ -1,0 +1,32 @@
+ul{
+  margin: 20px 0;
+}
+.big li{
+  width: 40%;
+  height: 48px;
+  margin: 0 5%;
+  background: #ccc;
+  float: left;
+}
+
+.sml1 li{
+  width: 30%;
+  height: 40px;
+  margin: 0 1.66%;
+  float: left;
+  background: #000;
+}
+
+.sml2 li{
+  width: 30%;
+  height: 40px;
+  margin: 0 1.66%;
+  float: left;
+  background: #000;
+}
+
+a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
