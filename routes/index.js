@@ -5,6 +5,9 @@ let  rd = require('rd');
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+router.get('/myTest', function(req, res, next) {
+    res.render('myTestView', { title: 'This is my Test html!' });
+});
 //同步遍历文件
 rd.eachSync('./views', function (f, s) {
     if(f.indexOf('.ejs')!=-1){
