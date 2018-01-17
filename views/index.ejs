@@ -7,20 +7,21 @@
   </head>
   <body ng-app='ngRouteExample'>
     <ul class="big clearfloat">
-      <li></li>
-      <li></li>
+      <li>Part one</li>
+      <li>Part two</li>
     </ul>
     <ul class="sml1 clearfloat zz" style="display: none">
-      <li><a href="#/home1"></a></li>
-      <li><a href="#/home2"></a></li>
-      <li><a href="#/home3"></a></li>
+      <li><a href="#/home1">First page</a></li>
+      <li><a href="#/home2">Second page</a></li>
+      <li><a href="#/home3">Third page</a></li>
     </ul>
     <ul class="sml2 clearfloat zz" style="display: none">
-      <li><a href="#/home4"></a></li>
-      <li><a href="#/home5"></a></li>
-      <li><a href="#/home6"></a></li>
+      <li><a href="#/home4">Fourth page</a></li>
+      <li><a href="#/home5">Fifth page</a></li>
+      <li><a href="#/home6">Sixth page</a></li>
     </ul>
-    <div ng-view></div>
+    <div class="pages"><div ng-view></div></div>
+
   </body>
   <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
   <script src="http://apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>

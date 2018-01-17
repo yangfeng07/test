@@ -1,6 +1,42 @@
 $('.big li').on('click',function () {
     $('.zz').hide();
     $('.zz').eq($(this).index()).show();
+    $('.pages').hide();
+    if($(this).index()==0){
+        $('.sml1 li a').css({
+            'background':'#fff',
+            'color':'#fc8395'
+        });
+    }else{
+        $('.sml2 li a').css({
+            'background':'#fff',
+            'color':'#5bbffc'
+        });
+    }
+})
+
+$('.sml1 li a').on('click',function () {
+    $('.sml1 li a').css({
+        'background':'#fff',
+        'color':'#fc8395'
+    });
+    $(this).css({
+        'background':'#fc8395',
+        'color':'#fff'
+    });
+    $('.pages').show();
+})
+
+$('.sml2 li a').on('click',function () {
+    $('.sml2 li a').css({
+        'background':'#fff',
+        'color':'#5bbffc'
+    });
+    $(this).css({
+        'background':'#5bbffc',
+        'color':'#fff'
+    });
+    $('.pages').show();
 })
 
 angular.module('ngRouteExample', ['ngRoute'])
@@ -13,27 +49,27 @@ angular.module('ngRouteExample', ['ngRoute'])
     .config(function ($routeProvider) {
         $routeProvider.
         when('/home1', {
-            templateUrl: '1.ejs',
+            templateUrl: 'views/Subpage/pages/1.ejs',
             controller: 'Home1Controller'
         }).
         when('/home2', {
-            templateUrl: '2.ejs',
+            templateUrl: 'views/Subpage/pages/2.ejs',
             controller: 'Home2Controller'
         }).
         when('/home3', {
-            templateUrl: '3.ejs',
+            templateUrl: 'views/Subpage/pages/3.ejs',
             controller: 'Home3Controller'
         }).
         when('/home4', {
-            templateUrl: '4.ejs',
+            templateUrl: 'views/Subpage/pages/4.ejs',
             controller: 'Home4Controller'
         }).
         when('/home5', {
-            templateUrl: '5.ejs',
+            templateUrl: 'views/Subpage/pages/5.ejs',
             controller: 'Home5Controller'
         }).
         when('/home6', {
-            templateUrl: '6.ejs',
+            templateUrl: 'views/Subpage/pages/6.ejs',
             controller: 'Home6Controller'
         });
     });
