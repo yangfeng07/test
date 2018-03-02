@@ -14,7 +14,7 @@ $('.big li').on('click',function () {
         });
     }
 })
-
+// 111
 $('.sml1 li a').on('click',function () {
     $('.sml1 li a').css({
         'background':'#fff',
